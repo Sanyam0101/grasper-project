@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grasper</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">GRASPER</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header Section -->
+    <main>
+        <section class="header">
+            <div class="theme-switcher">
+                <input type="radio" id="dark-mode" name="theme" value="dark">
+                <label for="dark-mode">Dark</label>
+                <input type="radio" id="light-mode" name="theme" value="light" checked>
+                <label for="light-mode">Light</label>
+            </div>
+            <h1 class="title">Grasper</h1>
+            <p class="subtitle">TEXT ANALYZER</p>
+            <div class="message-box">
+                <label for="file-upload" class="upload-btn">
+                    <input type="file" id="file-upload" accept="image/*,.pdf,.txt" hidden multiple>
+                    <i class="fas fa-paperclip" aria-label="Attach file"></i>
+                </label>
+                <textarea class="message-input" placeholder="Enter your text here..." rows="1"></textarea>
+                <button id="analyzeButton" class="send-btn" aria-label="Analyze text">➤</button>
+            </div>
+            <div class="analysis-options">
+                <label><input type="checkbox" checked> Sentiment Analysis</label>
+                <label><input type="checkbox" checked> Key Phrase Extraction</label>
+                <label><input type="checkbox" checked> Named Entity Recognition</label>
+            </div>
+            <div class="loading-spinner hidden">Analyzing your text...</div>
+            <div class="error-message hidden"></div>
+            <div id="result"></div>
+            <p class="note">Grasper may make mistakes. Consider checking important information.</p>
+        </section>
+
+        <!-- Partner Logos Section -->
+        <section class="partners" id="about">
+            <h2>Our Partners</h2>
+            <div class="logo-container">
+                <img src="pngs/Behance-Logo-2005.png" alt="Behance Logo">
+                <img src="pngs/google-logo-black-transparent.png" alt="Google Logo">
+                <img src="pngs/Apple-Simbolo.png" alt="Apple Logo">
+                <img src="pngs/logo-linkedin-1536.png" alt="LinkedIn Logo">
+                <img src="pngs/GitHub-Logo-2008-2013.png" alt="GitHub Logo">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-item">
+                <img src="pngs/10148754.png" alt="Sentiment Analysis Icon">
+                <h3>Sentiment Analysis</h3>
+                <p>Sentiment analysis categorizes emotions or opinions in text as positive, negative, or neutral.</p>
+            </div>
+            <div class="feature-item">
+                <img src="pngs/2504063.png" alt="Key Phrase Extraction Icon">
+                <h3>Key Phrase Extraction</h3>
+                <p>Extract essential words or phrases, highlighting main ideas and topics.</p>
+            </div>
+            <div class="feature-item">
+                <img src="pngs/nlpner-named-entity.png" alt="Named Entity Recognition Icon">
+                <h3>Named Entity Recognition</h3>
+                <p>Identifies specific entities such as names of people, organizations, locations, and dates.</p>
+            </div>
+        </section>
+
+        <!-- Latest Work Section -->
+        <section class="latest-work" id="work">
+            <h2>My Latest Work</h2>
+            <div class="work-gallery">
+                <!-- Work items here -->
+                <div class="work-item">
+                    <img src="pngs/2.png" alt="Free Bird">
+                    <p>Free Bird<br><span>Lynyrd Skynyrd</span></p>
+                </div>
+                <div class="work-item">
+                    <img src="pngs/3.png" alt="projects for AI">
+                    <p>projects for AI<br><span>Jimi Hendrix</span></p>
+                </div>
+                <div class="work-item">
+                    <img src="pngs/4.png" alt="projects for AI">
+                    <p>projects for AI<br><span>The Kinks</span></p>
+                </div>
+                <div class="work-item">
+                    <img src="pngs/Image.png" alt="projects for AI">
+                    <p>projects for AI<br><span>Tom Petty</span></p>
+                </div>
+                <div class="work-item">
+                    <img src="pngs/5.png" alt="projects for AI">
+                    <p>projects for AI<br><span>Led Zeppelin</span></p>
+                </div>
+                <div class="work-item">
+                    <img src="pngs/6.png" alt="projects for AI">
+                    <p>projects for AI<br><span>Queen</span></p>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>Fill out the form below to get in touch with us. We look forward to hearing from you!</p>
+                <div class="social-icons">
+                    <a href="#"><img src="pngs/discord-icon.png" alt="Discord"></a>
+                    <a href="#"><img src="pngs/github-logo-icon-3.png" alt="GitHub"></a>
+                    <a href="#"><img src="pngs/instagram-logo-transparent-background-2.png" alt="Instagram"></a>
+                    <a href="#"><img src="pngs/facebook-logo-1-2.png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Type your message here" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Footer links and text here -->
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">Social</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Github</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Read</a></li>
+                    <li><a href="#">Connect</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p>Grasper is a robust Natural Language Processing (NLP) tool designed for comprehensive text analysis. It provides sentiment analysis, key phrase extraction, and entity recognition, enabling a deep understanding of text data for various applications.This version introduces Grasper and briefly highlights its core features</p>
+            </div>
+        </div>
+        <hr>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Grasper, Inc. • <a href="#">Site map</a> • <a href="#">Community guidelines</a> • <a href="#">Terms of service</a></p>
+        </div>
+    </footer>
+</body>
+</html>
