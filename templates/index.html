@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grasper</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/styles.css">
     <!-- Font Awesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="script.js" defer></script>
+    <script src="/static/script.js" defer></script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -56,9 +56,9 @@
         <section class="partners" id="about">
             <h2>Our Partners</h2>
             <div class="logo-container">
-                <img src="pngs/Behance-Logo-2005.png" alt="Behance Logo">
-                <img src="pngs/google-logo-black-transparent.png" alt="Google Logo">
-                <img src="pngs/Apple-Simbolo.png" alt="Apple Logo">
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="Attach file"alt="Behance Logo">
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="Attach file"alt="Google Logo">
+                <img src="{{ url_for('static', filename='images/2.png') }}" alt="Attach file"alt="Apple Logo">
                 <img src="pngs/logo-linkedin-1536.png" alt="LinkedIn Logo">
                 <img src="pngs/GitHub-Logo-2008-2013.png" alt="GitHub Logo">
             </div>
@@ -77,7 +77,7 @@
                 <p>Extract essential words or phrases, highlighting main ideas and topics.</p>
             </div>
             <div class="feature-item">
-                <img src="pngs/nlpner-named-entity.png" alt="Named Entity Recognition Icon">
+                <img src="/nlpner-named-entity.png" alt="Named Entity Recognition Icon">
                 <h3>Named Entity Recognition</h3>
                 <p>Identifies specific entities such as names of people, organizations, locations, and dates.</p>
             </div>
@@ -177,5 +177,7 @@
             <p>&copy; 2024 Grasper, Inc. • <a href="#">Site map</a> • <a href="#">Community guidelines</a> • <a href="#">Terms of service</a></p>
         </div>
     </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </body>
 </html>
