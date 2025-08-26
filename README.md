@@ -1,105 +1,140 @@
-Grasper Project
-A modern text analysis web application built with Flask and cutting-edge NLP techniques.
+# Grasper Project
 
-Description
-Grasper is an advanced text analysis tool designed to provide actionable insights from natural language data using state-of-the-art processing techniques. The application supports sentiment analysis, key phrase extraction, and entity recognition, delivered through a user-friendly, responsive interface.
+_A modern text analysis web application built with Flask and advanced NLP techniques._
 
-Features
-Sentiment Analysis: Detect and visualize text sentiment (positive, negative, neutral) using deep learning models.
+---
 
-Key Phrase Extraction: Highlights important keywords and phrases relevant to the input text.
+## Description
 
-Named Entity Recognition: Identifies persons, organizations, locations, and more from content.
+Grasper is an advanced **text analysis tool** that provides insights from natural language data using state-of-the-art processing methods. It supports sentiment analysis, key phrase extraction, and entity recognition, within a user-friendly and responsive web interface.
 
-Dark/Light Mode: Switch effortlessly between visual themes for optimal comfort.
+---
 
-Responsive Design: Seamlessly adapts across desktop, tablet, and mobile devices.
+## Features
 
-Technology Stack
-Flask: Backend web framework for robust APIs and routing.
+- **Sentiment Analysis**: Detect and visualize sentiment (positive, negative, neutral) using deep learning models.
+- **Key Phrase Extraction**: Automatic detection and highlighting of relevant keywords.
+- **Named Entity Recognition**: Identification of persons, organizations, locations, and more.
+- **Dark/Light Mode**: Easy switching for eye comfort.
+- **Responsive Design**: Works across desktop, tablet, and mobile devices.
 
-Transformers: Powerful NLP models for intelligent text analysis.
+---
 
-KeyBERT: Efficient keyword extraction leveraging BERT embeddings.
+## Technologies Used
 
-spaCy: Fast and accurate named entity recognition.
+- Flask (Backend Framework)
+- Transformers (NLP Models)
+- KeyBERT (Keyword Extraction)
+- spaCy (Named Entity Recognition)
+- JavaScript (Frontend Interactivity)
+- CSS (Styling)
 
-JavaScript: Enables interactive, dynamic frontend features.
+---
 
-CSS: Provides clean, maintainable styles and responsive layouts.
+## Getting Started
 
-Getting Started
-Prerequisites
-Python 3.8+
+### Prerequisites
 
-pip (Python package manager)
+- Python 3.8 or higher
+- pip
+- (Recommended) virtualenv for isolated environments
 
-Recommended: Virtualenv for isolated environments
+### Installation
+## Installation
 
-Installation
-bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/grasper-project.git
-cd grasper-project
+### Prerequisites
 
-# Create and activate a virtual environment
-python -m venv .venv
-source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+- Python 3.8 or higher
+- pip (Python package manager)
+- (Recommended) virtualenv for isolated environments
 
-# Install dependencies
-pip install -r requirements.txt
-Usage
-Run the Flask development server:
+### Steps
 
-bash
-flask run
-Open a browser and go to http://localhost:5000.
+1. **Clone the repository**
 
-Upload or enter text. See results for sentiment, key phrases, and entities.
+    ```
+    git clone https://github.com/YOUR_USERNAME/grasper-project.git
+    cd grasper-project
+    ```
 
-Example input:
+2. **Create and activate a virtual environment**
 
-"OpenAI released a new version of GPT in San Francisco."
+    ```
+    python -m venv .venv
+    # Activate the environment:
+    source .venv/bin/activate      # On Windows: .venv\Scripts\activate
+    ```
 
-Output:
+3. **Install dependencies**
 
-Sentiment: Neutral
+    ```
+    pip install -r requirements.txt
+    ```
+## Usage
 
-Key Phrases: OpenAI, GPT, San Francisco
+1. Run the Flask development server:
+    ```
+    flask run
+    ```
+2. Open your browser to [http://localhost:5000](http://localhost:5000)
+3. Enter or upload text to see sentiment, key phrases, and entity results.
 
-Entities: Organization (OpenAI), Location (San Francisco)
+### Example
 
-Project Structure
-text
+**Input:**  
+> "OpenAI released a new version of GPT in San Francisco."
+
+**Output:**  
+- Sentiment: Neutral  
+- Key Phrases: OpenAI, GPT, San Francisco  
+- Entities: Organization (OpenAI), Location (San Francisco)
+
+---
+
+## Project Structure
 grasper-project/
-│
-├── app/                # Main application logic
-├── static/             # CSS, JS, images
-├── templates/          # HTML Jinja templates
-├── requirements.txt    # Python dependencies
+├── app/            # Main application logic
+├── static/         # CSS, JS, images
+├── templates/      # HTML Jinja templates
+├── requirements.txt
 ├── README.md
 └── ...
-Contributing
+
+---
+
+## Contributing
+
 Contributions are welcome!
-Please:
 
-Follow PEP8 coding style
+- Follow [PEP8](https://peps.python.org/pep-0008/) coding style
+- Use feature branches for new changes
+- Please submit pull requests for review
 
-Use feature branches for new ideas
+Report bugs or suggestions via [GitHub Issues](https://github.com/YOUR_USERNAME/grasper-project/issues).
 
-Submit pull requests for review
+---
 
-Issues, bug reports, and feature suggestions can be filed via GitHub Issues.
+## License
 
-License
-Licensed under the MIT License.
-See the LICENSE file for full details.
+Licensed under the [MIT License](LICENSE).  
+See the LICENSE file for more details.
 
-Maintainers & Support
-Primary maintainer: [YOUR NAME]
-Contact: [your-email@example.com]
-Open issues for bug reports or suggestions.
+---
 
-Demo
-![App screenshot demo]
+## Maintainers & Support
+
+- Maintainer: **YOUR NAME**
+- Email: your-email@example.com
+
+---
+
+## Demo Screenshot
+
+![Grasper Project Screenshot](image.jpg)
+
+---
+<img width="1069" height="588" alt="Screenshot 2024-10-27 022443" src="https://github.com/user-attachments/assets/3fd3375f-643b-4493-93b5-6bb5ee1f5079" />
+
+
+
 
