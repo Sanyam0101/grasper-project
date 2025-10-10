@@ -46,8 +46,8 @@ def analyze_text():
         })
 
     except Exception as e:
-        app.logger.error(f"Analysis error: {e}")  # Log the error for debugging
-        return jsonify({'error': 'An error occurred during analysis'}), 500  # Internal Server Error
+        app.logger.error(f"Analysis error: {e}")
+        return jsonify({'error': 'An error occurred during analysis'}), 500
 
 # Error handlers
 @app.errorhandler(404)
@@ -58,9 +58,9 @@ def not_found_error(error):
 def internal_error(error):
     return jsonify({'error': 'Internal server error'}), 500
 
-# Load models on app startup
+
 with app.app_context():
     load_models()
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Set debug=False in production
+    app.run(debug=True) 
