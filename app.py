@@ -46,8 +46,8 @@ def analyze_text():
         })
 
     except Exception as e:
-        app.logger.error(f"Analysis error: {e}")  # Log the error for debugging
-        return jsonify({'error': 'An error occurred during analysis'}), 500  # Internal Server Error
+        app.logger.error(f"Analysis error: {e}")
+        return jsonify({'error': 'An error occurred during analysis'}), 500
 
 # Error handlers
 @app.errorhandler(404)
