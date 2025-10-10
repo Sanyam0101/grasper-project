@@ -58,9 +58,9 @@ def not_found_error(error):
 def internal_error(error):
     return jsonify({'error': 'Internal server error'}), 500
 
-# Load models on app startup
+
 with app.app_context():
     load_models()
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Set debug=False in production
+    app.run(debug=True) 
